@@ -24,7 +24,7 @@ async def on_message(message):
         for i in range(6):
             a += str(random.randint(0, 9))
 
-        name = str(message.author.id) + ".png"
+        name = str(message.author) + ".png"
         Captcha_img.write(a, name)
 
         await message.channel.send(f"""{message.author.mention} 아래 숫자를 10초 내에 입력해주세요. """)
