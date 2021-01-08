@@ -1,6 +1,6 @@
 
 # 필수설치 모듈
-#pip install discord.py
+#pip install discord
 #pip install captcha
 
 import discord
@@ -18,7 +18,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.startswith("/인증"): #명령어 /인증
+    if message.content.startswith("/인증"):    #명령어 /인증
         a = ""
         Captcha_img = ImageCaptcha()
         for i in range(6):
