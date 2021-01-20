@@ -10,7 +10,7 @@ import time
 
 client = discord.Client()
 token = '★봇 토큰★'
-gaming = '★상태에 표시될  게 임 이 름★'
+gaming = 'MapleStory'
 
 @client.event
 async def on_ready():
@@ -20,7 +20,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.startswith("/인증"):    #명령어 /인증
+    if message.content.startswith("아잉아 인증"):    #명령어 /인증
         a = ""
         Captcha_img = ImageCaptcha()
         for i in range(6):
